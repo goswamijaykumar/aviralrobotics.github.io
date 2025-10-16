@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="images/ logo.png">
+    <title>Contact | AVIRAL Robotics</title>
+    <meta name="description"
+        content="Get in touch with AVIRAL Robotics for pilot programs, investor inquiries, or technical demos.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>AVIRAL</h1>
+                        <span class="tagline">Robotics</span>
+                    </a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="technology.html">Technology</a>
+                    <a href="contact.html" class="btn-primary-nav">Contact Us</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">Get in Touch</span>
+            <h1 class="gradient-text">Let's Build the Future Together</h1>
+            <p class="page-intro">
+                Whether you're exploring pilot opportunities, seeking investment information,
+                or want a technical deep-dive. <i>we'd love to hear from you.</i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                    <div class="contact-form">
+                        <h2>Contact Us</h2>
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                            <!-- Hidden Fields for Web3Forms -->
+                            <input type="hidden" name="access_key" value="3ddd2d67-e359-4295-85fa-ddc1aafd17bd">
+                            <input type="hidden" name="subject" value="New Contact Form Submission - AVIRAL Robotics">
+                            <input type="hidden" name="from_name" value="AVIRAL Robotics Website">
+                            <input type="hidden" name="redirect" value="https://aviralrobotics.com/contact.html#success">
+
+                            <!-- Form Fields -->
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Your Role *</label>
+                                <select id="role" name="role" required>
+                                    <option value="">Select...</option>
+                                    <option value="Warehouse/Ops Leader">Warehouse/Ops Leader</option>
+                                    <option value="Supply Chain Executive">Supply Chain Executive</option>
+                                    <option value="Technology/IT">Technology/IT</option>
+                                    <option value="Investor/VC">Investor/VC</option>
+                                    <option value="Strategic Partner">Strategic Partner</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interest">Interest Area *</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Select...</option>
+                                    <option value="Pilot Program">Pilot Program</option>
+                                    <option value="Technical Demo">Technical Demo</option>
+                                    <option value="Investment Opportunity">Investment Opportunity</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell us about your warehouse operations, challenges, or questions..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary-large">Submit Request</button>
+                            <p class="form-note">We typically respond within 24 hours</p>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="formSuccess" class="form-success" style="display:none;">
+                            <h3>✓ Thank you!</h3>
+                            <p>We've received your request and will be in touch shortly.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>For Pilot Programs</h3>
+                            <p>Interested in deploying AVIRAL in your warehouse? We're seeking partners for early pilot
+                                programs.</p>
+                            <a href="mailto:aviral.contactus@gmail.com"
+                                class="contact-link">aviral.contactus@gmail.com</a>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>For Investors</h3>
+                            <p>Exploring investment opportunities? Request our pitch deck and product roadmap.</p>
+                            <a href="mailto:aviral.contactus@gmail.com"
+                                class="contact-link">aviral.contactus@gmail.com</a>
+                        </div>
+
+                        <!-- <div class="info-card">
+                        <h3>General Inquiries</h3>
+                        <p>Questions about our technology, team, or vision? We're here to help.</p>
+                        <a href="mailto:hello@aviralrobotics.com" class="contact-link">hello@aviralrobotics.com</a>
+                    </div> -->
+
+                        <!-- <div class="info-card">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">LinkedIn →</a>
+                            <a href="#" class="social-link">Twitter →</a>
+                            <a href="#" class="social-link">GitHub →</a>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AVIRAL Robotics</h3>
+                    <p>Autonomous Vision & Intelligent Robotics for Advanced Logistics</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="index.html#vision">Vision</a>
+                        <a href="technology.html">Technology</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="mailto:aviral.contactus@gmail.com">aviral.contactus@gmail.com</a>
+                        <!-- <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVIRAL Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

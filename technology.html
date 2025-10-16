@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="images/ logo.png">
+    <title>Technology | AVIRAL Robotics</title>
+    <meta name="description" content="Discover AVIRAL's full-stack autonomous inventory platform: AI-powered drones, LiDAR perception, computer vision, and real-time digital twin technology.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>AVIRAL</h1>
+                        <span class="tagline">Robotics</span>
+                    </a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="technology.html">Technology</a>
+                    <a href="contact.html" class="btn-primary-nav">Contact Us</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">Technology</span>
+            <h1 class="gradient-text" >What AVIRAL Does</h1>
+            <p class="page-intro">
+                An AI-driven autonomous inventory management platform that fuses robotics, computer vision, 
+                and real-time analytics to create a self-updating digital twin of the warehouse.
+            </p>
+        </div>
+    </section>
+
+    <!-- Core Technologies -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 style="margin-bottom: 2rem; margin-top: -3rem;">Powered by Four Core Technologies</h2>
+            
+            <div class="tech-layer">
+                <div class="layer-number">01</div>
+                <div class="layer-content">
+                    <h3>Autonomous Drones</h3>
+                    <p class="layer-desc">Execute programmed flight paths across racks and aisles, scanning hundreds of pallets per hour using AI-based SLAM and LiDAR depth sensing for safe navigation.</p>
+                    <div class="layer-features">
+                        <div class="feature-item">
+                            <h4>Indoor Autonomy</h4>
+                            <p>LiDAR + vision SLAM for GPS-free localization; no infrastructure changes required</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>150–200 Pallets/Hour</h4>
+                            <p>High-resolution cameras capture barcodes, labels, and shelf state with redundancy</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Safety First</h4>
+                            <p>Obstacle avoidance, emergency return-to-dock, geofenced routes; supervised at <0.25 FTE load</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-layer">
+                <div class="layer-number">02</div>
+                <div class="layer-content">
+                    <h3>Computer Vision + OCR</h3>
+                    <p class="layer-desc">High-resolution cameras and deep-learning models identify barcodes, labels, and SKUs with 99.9% accuracy, even in poor lighting or complex layouts.</p>
+                    <div class="layer-features">
+                        <div class="feature-item">
+                            <h4>YOLOv8 + OCR Pipeline</h4>
+                            <p>Real-time barcode detection and text recognition running on NVIDIA Jetson-class edge compute</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Quality Control Layer</h4>
+                            <p>Blur detection, duplicate-frame rejection, checksum validation performed locally before data leaves drone</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Adaptive Learning</h4>
+                            <p>Models continuously retrain on edge cases; 99.9% accuracy even with damaged or rotated labels</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-layer">
+                <div class="layer-number">03</div>
+                <div class="layer-content">
+                    <h3>Edge + Cloud Analytics</h3>
+                    <p class="layer-desc">Onboard GPU modules perform real-time inference; verified data streams instantly to the AVIRAL Cloud, where it is reconciled with WMS/ERP databases.</p>
+                    <div class="layer-features">
+                        <div class="feature-item">
+                            <h4>Edge Processing</h4>
+                            <p>NVIDIA Jetson runs inference at the edge; only verified, high-confidence data transmitted to cloud</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>AI Reconciliation</h4>
+                            <p>Cloud engine matches captured IDs against WMS, highlights misplacements, discrepancies, aging/expiration risks</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Exception Engine</h4>
+                            <p>Generates prioritized task queues for managers instead of raw data dumps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-layer">
+                <div class="layer-number">04</div>
+                <div class="layer-content">
+                    <h3>Live Digital Twin Dashboard</h3>
+                    <p class="layer-desc">The system continuously updates a 3D map of every rack and pallet, creating a proof-based audit trail accessible from any site in real time.</p>
+                    <div class="layer-features">
+                        <div class="feature-item">
+                            <h4>Real-Time 3D Model</h4>
+                            <p>Every pallet, every bay represented with photo + scan evidence; live freshness indicators</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Multi-Site Aggregation</h4>
+                            <p>Supports enterprise rollouts with aggregated reporting and site benchmarking</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Audit-Ready Trail</h4>
+                            <p>Every scan stored with metadata (pallet ID, location, timestamp, photo) for recalls, audits, disputes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works: 4-Step Process -->
+    <section class="how-it-works" style="margin-top: -12rem;">
+        <div class="container">
+            <div class="section-header">
+                <h2>How AVIRAL Works</h2>
+                <p class="section-intro">A continuous, autonomous loop that turns physical <br>reality into actionable intelligence</p>
+            </div>
+
+            <!-- Step 1: Deploy -->
+            <div class="process-step">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <h3>Deploy - Site Setup & System Integration</h3>
+                    <span class="step-time">2-4 weeks | No racking changes, no IT overhaul</span>
+                </div>
+                <div class="step-content">
+                    <div class="step-details">
+                        <div class="detail-card">
+                            <h4>Hardware Installation</h4>
+                            <p>Drone docking station (charging + data link) installed in safe corner of warehouse; geofences and no-fly zones configured</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Initial Mapping</h4>
+                            <p>One supervised flight maps aisles, racks, heights; spatial data stored locally on drone</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>WMS Integration</h4>
+                            <p>API connectors link to SAP, Manhattan, BlueYonder, etc. Data schemas (ASN, SKU, pallet IDs) synced automatically</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Security</h4>
+                            <p>Role-based SSO access, secure MQTT/HTTPS protocols for all data streams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Scan -->
+            <div class="process-step">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <h3>Scan - Autonomous Flight & Edge Capture</h3>
+                    <span class="step-time">150-200 pallets/hour | Off-hours operation</span>
+                </div>
+                <div class="step-content">
+                    <div class="step-details">
+                        <div class="detail-card">
+                            <h4>Full Autonomy</h4>
+                            <p>Drones plan and fly pre-defined routes using LiDAR + vision SLAM (no GPS required), obstacle avoidance built-in</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>High-Speed Capture</h4>
+                            <p>High-resolution cameras + laser range sensors detect barcodes, labels, and shelf state at 150–200 pallets/hour</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Edge AI Processing</h4>
+                            <p>NVIDIA Jetson runs YOLOv8 + OCR pipeline onboard; blur detection, duplicate rejection, checksum validation before transmission</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Safety Protocols</h4>
+                            <p>Emergency return-to-dock, real-time monitoring; single operator supervision at <0.25 FTE load</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Analyze -->
+            <div class="process-step">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <h3>Analyze - Cloud Inference & Reconciliation</h3>
+                    <span class="step-time"><1 hour data latency | Real-time exceptions </span>
+                </div>
+                <div class="step-content">
+                    <div class="step-details">
+                        <div class="detail-card">
+                            <h4>Encrypted Transmission</h4>
+                            <p>Data encrypted and sent to cloud (or on-premise edge node if required), TLS 1.3 secure channels</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>AI Reconciliation</h4>
+                            <p>Captured IDs matched against WMS; system highlights misplacements, discrepancies, aging/expiration risks</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Digital Twin Update</h4>
+                            <p>3D spatial model continuously updated every pallet, every bay with photo + scan evidence</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Exception Engine</h4>
+                            <p>Workflows generate prioritized task queue (re-slotting, adjustments), instead of raw data dumps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Act -->
+            <div class="process-step">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <h3>Act - Operational & Financial Integration</h3>
+                    <span class="step-time">Instant WMS sync | Audit-ready trail</span>
+                </div>
+                <div class="step-content">
+                    <div class="step-details">
+                        <div class="detail-card">
+                            <h4>WMS Sync</h4>
+                            <p>Exceptions pushed directly into WMS tasks for resolution (re-slotting, adjustments), bi-directional data flow</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Finance View</h4>
+                            <p>Real-time "inventory truth" for controllers → faster month-end closes, reduced shrink reserves</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Operations Dashboard</h4>
+                            <p>Supervisors see live dashboards: freshness indicators, labor savings, exception heatmaps across sites</p>
+                        </div>
+                        <div class="detail-card">
+                            <h4>Audit Log</h4>
+                            <p>Every scan stored with metadata (pallet ID, location, timestamp, photo), verifiable proof for audits, recalls, disputes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Differentiation -->
+    <section class="competitive-edge">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text" style="margin-top: -2rem; margin-bottom: -1rem;">What Makes AVIRAL Different</h2>
+                <p style="margin-bottom: -1rem;" class="section-intro">We deliver the audit-grade truth layer competitors can't match</p>
+            </div>
+            
+            <div style="margin-bottom: -1rem;" class="differentiation-grid">
+                <div class="diff-card highlight">
+                    <h3>✓ Multi-Platform Autonomy</h3>
+                    <p>Our software works with multiple drone OEMs; you're not locked into proprietary hardware</p>
+                </div>
+                <div class="diff-card highlight">
+                    <h3>✓ Full 3D Mapping</h3>
+                    <p>LiDAR + Vision fusion creates precise spatial models; competitors rely on 2D images</p>
+                </div>
+                <div class="diff-card highlight">
+                    <h3>✓ Live Digital Twin</h3>
+                    <p>3D interactive dashboard with proof-backed data; not just barcode counts</p>
+                </div>
+                <div class="diff-card">
+                    <h4>× Fixed Cameras</h4>
+                    <p>Competitors use fixed cameras limited coverage, blind spots at high racks</p>
+                </div>
+                <div class="diff-card">
+                    <h4>× Proprietary Hardware</h4>
+                    <p>Competitors lock you into their drones high CapEx, vendor dependency</p>
+                </div>
+                <div class="diff-card">
+                    <h4>× Ground-Only</h4>
+                    <p>AMRs can't reach tall racks or fly over obstacles slower, limited reach</p>
+                </div>
+            </div>
+
+            <!-- <div class="edge-summary">
+                <h3>The AVIRAL Advantage</h3>
+                <p><strong>Verifiable facts</strong> (photo + time + 3D coordinate) on a <strong>self-updating digital twin</strong>, with a <strong>full-stack platform</strong> that deploys fast (2–4 weeks) and scales across robots.</p>
+                 <p class="roi-highlight">Result: 8–12× ROI, 3–6 month payback, 99.9% accuracy</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Integration -->
+    <!-- <section class="integration">
+        <div class="container">
+            <h2>Seamless WMS/ERP Integration</h2>
+            <p class="integration-intro">
+                AVIRAL acts as an intelligent sensing layer that enhances your existing warehouse management system—
+                no rip-and-replace required.
+            </p>
+            <div class="integration-diagram">
+                <div class="integration-box">
+                    <h4>Your Existing Systems</h4>
+                    <p>SAP, Oracle, Manhattan, Blue Yonder, Körber, etc.</p>
+                </div>
+                <div class="integration-arrow">↔</div>
+                <div class="integration-box highlight">
+                    <h4>AVIRAL Platform</h4>
+                    <p>RESTful API • Real-time data streams • Event-driven updates</p>
+                </div>
+                <div class="integration-arrow">↔</div>
+                <div class="integration-box">
+                    <h4>Physical Operations</h4>
+                    <p>Continuous verification & synchronization</p>
+                </div>
+            </div>
+            
+            <div class="integration-features">
+                <div class="int-feature">
+                    <h4>API-First Architecture</h4>
+                    <p>RESTful connectors for all major WMS/ERP platforms; standard data schemas</p>
+                </div>
+                <div class="int-feature">
+                    <h4>Bi-Directional Sync</h4>
+                    <p>Physical world updates digital, digital verifies physical—continuous reconciliation</p>
+                </div>
+                <div class="int-feature">
+                    <h4>Plug & Play</h4>
+                    <p>2–4 week deployment; no custom code required; pre-built mappings for SAP, Manhattan, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>See AVIRAL in Action</h2>
+                <p>Schedule a technical deep-dive with our robotics team or request a pilot program for your facility.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary-large">Request Pilot</a>
+                    <a href="mailto:hello@aviralrobotics.com" class="btn-secondary-large">Technical Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AVIRAL Robotics</h3>
+                    <p>Autonomous Vision & Intelligent Robotics for Advanced Logistics</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="index.html#vision">Vision</a>
+                        <a href="technology.html">Technology</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="mailto:aviral.contactus@gmail.com">aviral.contactus@gmail.com</a>
+                        <a href="mailto:aviral.contactus@gmail.com">Pilot Programs</a>
+                        <a href="mailto:aviral.contactus@gmail.com">Investor Relations</a>
+                        <!-- <a href="#">LinkedIn</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVIRAL Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
